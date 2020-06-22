@@ -1,0 +1,50 @@
+{
+  "name": "stoicism-js-style",
+  "version": "0.0.1",
+  "description": "ESLint and Prettier configurations for JavaScript in the Stoicism Compendium",
+  "license": "BlueOak-1.0.0",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "prettier",
+    "prettier-config"
+  ],
+  "repository": "https://github.com/stoicism-compendium/stoicism-js-style.git",
+  "bugs": "https://github.com/stoicism-compendium/stoicism-js-style/issues",
+  "author": "Sean Leather (https://github.com/spl)",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "eslint-config-standard": "^14.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0",
+    "prettier": "2.0.5"
+  },
+  "devDependencies": {
+    "depcheck": "^0.9.2",
+    "eslint": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-node": "*",
+    "eslint-plugin-promise": "*",
+    "eslint-plugin-standard": "*",
+    "prettier": "*",
+    "remark-cli": "^8.0.0",
+    "remark-preset-stoicism": "git+https://github.com/stoicism-compendium/remark-preset-stoicism.git"
+  },
+  "scripts": {
+    "check-js": "npm run check-js-pass && npm run check-js-fail",
+    "check-js-fail": "node test/fail.js",
+    "check-js-pass": "prettier --check '**/*.js' && eslint .",
+    "check-md": "remark --quiet --frail .",
+    "depcheck": "depcheck",
+    "format-js": "prettier --write '**/*.js' && eslint --fix .",
+    "format-md": "remark --output --quiet --frail .",
+    "test": "npm run check-md && npm run check-js && npm run depcheck"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "test/fail"
+  ]
+}
