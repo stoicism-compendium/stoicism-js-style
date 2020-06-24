@@ -2,6 +2,8 @@
 
 <!-- Badges -->
 
+![test](https://github.com/stoicism-compendium/stoicism-js-style/workflows/test/badge.svg)
+
 <!-- Brief description -->
 
 _**ESLint and Prettier configurations for JavaScript in the Stoicism
