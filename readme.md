@@ -9,8 +9,6 @@
 _**ESLint and Prettier configurations for JavaScript in the Stoicism
 Compendium**_
 
----
-
 This package combines the following configurations for linting and formatting
 JavaScript:
 
