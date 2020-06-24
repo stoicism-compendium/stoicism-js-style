@@ -3,7 +3,7 @@
 # 1. Perform a clean install of node dependencies.
 # 2. Run tests.
 
-name: tests
+name: test
 
 on:
   push:
