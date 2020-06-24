@@ -1,13 +1,15 @@
 # Stoicism JavaScript Style
 
+<!-- Badges -->
+
+![test](https://github.com/stoicism-compendium/stoicism-js-style/workflows/test/badge.svg)
+
 <!-- Brief description -->
 
 _**ESLint and Prettier configurations for JavaScript in the Stoicism
 Compendium**_
 
-<!-- Badges -->
-
-![test](https://github.com/stoicism-compendium/stoicism-js-style/workflows/test/badge.svg)
+---
 
 This package combines the following configurations for linting and formatting
 JavaScript:
