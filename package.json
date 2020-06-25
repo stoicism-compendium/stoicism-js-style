@@ -31,7 +31,7 @@
     "eslint-plugin-standard": "*",
     "prettier": "*",
     "remark-cli": "^8.0.0",
-    "remark-preset-stoicism": "git+https://github.com/stoicism-compendium/remark-preset-stoicism.git"
+    "remark-preset-stoicism": "^0.0.1"
   },
   "scripts": {
     "check-js": "npm run check-js-pass && npm run check-js-fail",
