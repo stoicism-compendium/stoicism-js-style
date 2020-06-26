@@ -13,7 +13,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -21,11 +20,11 @@ jobs:
         node-version: [10.x, 12.x, 14.x]
 
     steps:
-    - name: Check out repository
-      uses: actions/checkout@v2
-    - name: Set up Node.js v${{ matrix.node-version }}
-      uses: actions/setup-node@v2.0.0
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm test
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Set up Node.js v${{ matrix.node-version }}
+        uses: actions/setup-node@v2.0.0
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm test
