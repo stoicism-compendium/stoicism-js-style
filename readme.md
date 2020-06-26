@@ -2,7 +2,7 @@
 
 <!-- Badges -->
 
-![test](https://github.com/stoicism-compendium/stoicism-js-style/workflows/test/badge.svg)
+[![test][test-badge]][test]
 
 <!-- Brief description -->
 
@@ -273,4 +273,6 @@ they are well-motivated. <a href="#footnote1-source">⏎</a>
 [prettier-trailing-commas]: https://prettier.io/docs/en/options.html#trailing-commas
 [prettier]: https://prettier.io/
 [standardjs]: https://standardjs.com/
+[test-badge]: https://github.com/stoicism-compendium/stoicism-js-style/workflows/test/badge.svg
+[test]: https://github.com/stoicism-compendium/stoicism-js-style/actions?query=workflow%3Atest
 [yarn]: https://yarnpkg.com/
