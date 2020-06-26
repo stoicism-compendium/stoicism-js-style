@@ -1,0 +1,15 @@
+# This workflow collects all links in Markdown files weekly and checks if they
+# are live.
+
+name: check-links-weekly
+
+on:
+  schedule:
+    - cron: '0 9 * * SAT' # Every Saturday at 09:00 UTC
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
