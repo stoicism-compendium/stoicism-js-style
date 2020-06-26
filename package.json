@@ -38,10 +38,12 @@
     "check-js-fail": "node test/fail.js",
     "check-js-pass": "prettier --check '**/*.js' && eslint .",
     "check-md": "remark --quiet --frail .",
+    "check-yml": "prettier --check '**/*.yml'",
     "depcheck": "depcheck",
     "format-js": "prettier --write '**/*.js' && eslint --fix .",
     "format-md": "remark --output --quiet --frail .",
-    "test": "npm run check-md && npm run check-js && npm run depcheck"
+    "format-yml": "prettier --write '**/*.yml'",
+    "test": "npm run check-md && npm run check-yml && npm run check-js && npm run depcheck"
   },
   "eslintIgnore": [
     "node_modules",

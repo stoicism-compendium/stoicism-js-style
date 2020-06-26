@@ -9,18 +9,17 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repository
-      uses: actions/checkout@v2
-    - name: Set up node v14
-      uses: actions/setup-node@v2.0.0
-      with:
-        node-version: 14.x
-        registry-url: https://registry.npmjs.org
-    - name: Publish package
-      run: npm publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Set up node v14
+        uses: actions/setup-node@v2.0.0
+        with:
+          node-version: 14.x
+          registry-url: https://registry.npmjs.org
+      - name: Publish package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
