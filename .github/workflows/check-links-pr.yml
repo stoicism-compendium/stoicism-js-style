@@ -1,0 +1,18 @@
+# This workflow collects all links in Markdown files changed by a pull request
+# and checks if they are live.
+
+name: check-links-pr
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          check-modified-files-only: yes
