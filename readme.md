@@ -2,7 +2,7 @@
 
 <!-- Badges -->
 
-![test](https://github.com/stoicism-compendium/stoicism-js-style/workflows/test/badge.svg)
+[![test][test-badge]][test]
 
 <!-- Brief description -->
 
