@@ -23,7 +23,7 @@
     "prettier": "2.0.5"
   },
   "devDependencies": {
-    "depcheck": "^1.0.0",
+    "depcheck": "^1.2.0",
     "eslint": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-node": "*",
