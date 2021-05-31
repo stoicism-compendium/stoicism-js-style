@@ -16,7 +16,7 @@
     "index.js"
   ],
   "dependencies": {
-    "eslint-config-standard": "^15.0.1"
+    "eslint-config-standard": "^16.0.3"
   },
   "peerDependencies": {
     "eslint": "^7.5.0",
